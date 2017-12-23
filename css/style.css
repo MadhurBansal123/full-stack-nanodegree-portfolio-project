@@ -1,8 +1,12 @@
-html, body {
-  -webkit-font-smoothing: antialiased;
+html, body 
+{
+    -webkit-font-smoothing: antialiased;
 }
-body {
-    background:/*#85bbf2*/#b7c1cc;
+
+
+body
+{
+    background:#b7c1cc;
     color: #000;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -11,24 +15,33 @@ body {
     max-width: 800px;
     padding: 20px 20px 20px;
 }
-/* Header CSS Starts*/
-header .container{
-  max-width:980px;
-  display: flex;
-  position: relative;
-}
+
+
+/* Header*/
 header
 {
     padding: 10px;
     border: 2px solid black;
 }
-header .leftCol
+
+
+.container1
+{
+    max-width:980px;
+    display: flex;
+    position: relative;
+}
+
+
+.leftCol
 {
     width:40%;
     float:left;
     padding: 13px;
 }
-header .logo
+
+
+.logo
 {
     background: url("../images/logo.jpg") no-repeat center;
     background-size: cover;
@@ -38,100 +51,151 @@ header .logo
     width:10em;
     height:10em;
 }
-header .rightCol
+
+
+.rightCol
 {
     width:90%;
     text-align: right;
     float:right;
 }
-header .name
+
+
+.name
 {
     font-family:sans-serif;
     font-size: 2em;
     font-weight:500;
 }
-header .rightCol .name{
-  padding-bottom:5px;
-  font-weight: normal;
-  text-transform: uppercase;
+
+
+.rightCol .name
+{
+    padding-bottom:5px;
+    font-weight: normal;
+    text-transform: uppercase;
 }
-/* Header CSS Ends*/
-/* Work Tiles Heading CSS*/
-h2.heading {
-  text-transform: uppercase;
-  margin: 1.75rem 0;
-  border-bottom: solid 1px #aaa;
-  line-height: 0px;
-  font-weight: normal;
-  color:#627788;
+
+
+/* Work Tiles Heading*/
+.heading 
+{
+    text-transform: uppercase;
+    margin: 1.75rem 0;
+    border-bottom: solid 1px #aaa;
+    line-height: 0px;
+    font-weight: normal;
+    color:#627788;
 }
-h2.heading span{
-  background: #eee;
-  padding-right:10px;
+
+
+.heading span
+{
+    background: #eee;
+    padding-right:10px;
 }
-/* CSS for item Containers*/
-.container {
-  align-content: center;
-  max-width:100%;
-  padding-top:20px;
+
+
+/* Item Containers*/
+.container2 
+{
+    align-content: center;
+    max-width:100%;
+    padding-top:20px;
 }
-#items {
-  display: flex; 
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
+
+
+#mainimg
+{
+    max-width:100%;
 }
-#items .portfolio-item {
-  background: #fff;
-  width: 32%;
-  margin-bottom:2%;
-  text-align: left;
-  box-shadow: 0 2px 0 #D9E1E7;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  border-radius: 3px;
+
+
+#items 
+{
+    display: flex; 
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
 }
-#items .portfolio-item img{
-  border-radius: 3px 3px 0 0;
-  align-self: center;
+
+
+#items .portfolio-item
+{
+    background: #fff;
+    width: 32%;
+    margin-bottom:2%;
+    text-align: left;
+    box-shadow: 0 2px 0 #D9E1E7;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 3px;
 }
-#items .portfolio-item .text_block{
-  padding: 1.25rem;
+
+
+#items .portfolio-item img
+{
+    border-radius: 3px 3px 0 0;
+    align-self: center;
 }
-#items .portfolio-item h3 {
-  font-size:18px;
-  color:#444;
+
+
+#items .portfolio-item .text_block
+{
+    padding: 1.25rem;
 }
-#items .portfolio-item:nth-child(3n-1) {
-  margin-right:2%;
-  margin-left:2%;
+
+
+#items .portfolio-item h3 
+{
+    font-size:18px;
+    color:#444;
 }
+
+
+#items .portfolio-item:nth-child(3n-1) 
+{
+    margin-right:2%;
+    margin-left:2%;
+}
+
+
+.blockimg
+{
+    width:100%;
+    height=width;
+}
+
+
 /* Media Containers for increased responsivness*/
-@media screen and (min-width: 600px) and (max-width: 850px)  {
-  #items .portfolio-item{
+@media screen and (min-width: 600px) and (max-width: 850px)  
+{
+    #items .portfolio-item{
     width:49%;
-  }
-  #items .portfolio-item:nth-child(odd) {
+}
+#items .portfolio-item:nth-child(odd) 
+{
     margin-right:2%;
     margin-left:0px;
-  }
-  #items .portfolio-item:nth-child(even) {
+}
+#items .portfolio-item:nth-child(even) 
+{
     margin-right:0px;
     margin-left:0px;
-  }
 }
-@media screen and (max-width:440px)
-{
+}
 
-}
-@media screen and (max-width: 600px)  {
-  #items .portfolio-item{
-    width:99%;
-    margin-right:0!important;
-    margin-left:0!important;
-    margin-bottom:20px;
-  }
+
+@media screen and (max-width: 600px)  
+{
+    #items .portfolio-item
+      {
+        width:99%;
+        margin-right:0!important;
+        margin-left:0!important;
+        margin-bottom:20px;
+      }
 }
